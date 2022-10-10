@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <!-- NAVBAR -->
+        <nav class="flex_row">
+            <li><img src="../IMG/menuHamburguesa.svg" alt="menu hamburguesa" class="img_size_nav pos_rel" id="hamburguer"></li>
+            <li><a href="index.html"><img src="../IMG/logo.svg" alt="logo" class="img_size_nav pos_rel" id="logo"></a></li>
+            <li><img src="../IMG/carrito.svg" alt="carrito" class="img_size_nav pos_rel" id="carrito"></li>
+            <li><img src="../IMG/usuario.svg" alt="usuario" class="img_size_nav pos_rel" id="user"></li>
+        </nav>
+        <ul class="categorias dnone">
+            <li><h3>Categorias</h3></li>
+            <li>Guerra</li>
+            <div>
+                <li>Deportes</li>
+            </div>
+            <li>Arcade</li>
+            <li>Rapidos</li>
+            <li>De mesa</li>
+            <li>Gratis</li>
+            <li>Pagos</li>
+            <li>Mis juegos</li>
+            <li>Prosimos lanzamientos</li>
+            <li>Descuentos</li>
+        </ul>
+        <ul class="configuracion dnone">
+            <li><h3>Metodo de pago</h3></li>
+            <li>Modo</li>
+            <li>Cuenta</li>
+            <li><img src="" alt="rrss" id="rrss"></li>
+        </ul>
+        <!-- BREADCRUMB -->
+        <ul class="breadcrumb flex_row">
+            <li><a href="javascript:history.back()"><img src="../IMG/flechaAtras.svg" alt="flecha"></a></li>
+            <li>Home</li>
+            <li>/</li>
+            <li>4 en linea</li>
+        </ul>
+        <!-- MEDIO -->
+        <div class="body_div">
+            <div id="pregame">
+                <div class="juego_exe flex_row">
+                    <div class="jugador">
+                        <img src="../IMG/jugador1.svg" alt="j1" class="j1">
+                        <p class="j2">Elegi un equipo</p>
+                        <img src="../IMG/antiterroPersonaje.png" alt="antiterro" class="j3" id="antiterro">
+                        <h4 class="j4">Antiterrorista</h4>
+                        <img src="../IMG/terroPersonaje.png" alt="terro" class="j5 desvanecido" id="terro">
+                        <h4 class="j6">Terrorista</h4>
+                    </div>
+                    <div class="jugador">
+                        <img src="../IMG/pc_jugador2.svg" alt="pc_j2" class="j1">
+                        <p class="j2">Elegi un equipo</p>
+                        <img src="../IMG/antiterroPersonaje.png" alt="antiterro" class="j3 desvanecido" id="antiterro">
+                        <h4 class="j4">Antiterrorista</h4>
+                        <img src="../IMG/terroPersonaje.png" alt="terro" class="j5" id="terro">
+                        <h4 class="j6">Terrorista</h4>
+                    </div>
+                    <button class="btn_jugar" id="gameJugar">
+                        <span></span><span></span><span></span><span></span>
+                        Jugar
+                    </button>
+                </div>
+            </div>
+            <div class="dnone" id="game">
+                <figure>
+                    <img src="../IMG/4_en_linea_partes/ayuda.svg" alt="" id="ayudaBoton">
+                    <img src="../IMG/4_en_linea_partes/j1.svg" alt="">
+                    <img src="../IMG/4_en_linea_partes/tabla.svg" alt="">
+                    <img src="../IMG/4_en_linea_partes/j2.svg" alt="">
+                    <img src="../IMG/4_en_linea_partes/pausa.svg" alt="" id="pausaBoton">
+
+                </figure>
+                <div class="div_menu_pausa dnone">
+                    <ul id="menu_pausa" class="dflex">
+                        <li><h3>Menu</h3></li>
+                        <li>Reanudar</li>
+                        <li>Reiniciar</li>
+                        <li>Sonido: On</li>
+                        <li>Salir</li>
+                    </ul>
+                </div>
+                <img src="../IMG/4_en_linea_partes/menuAyuda.svg" alt="menu ayuda" id="menuAyuda" class="dnone">
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="flex_row">
+            <div class="footer">
+                <h3>Juegos</h3>
+                <ul>
+                    <li>Mis juegos</li>
+                    <li><a href="juegosGratis.html">Juegos gratis</a></li>
+                    <li>Categorias</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Cuenta</h3>
+                <ul>
+                    <li>Cambiar fondo</li>
+                    <li>Medios de pago</li>
+                    <li>Tema</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Legales</h3>
+                <ul>
+                    <li>Privacidad</li>
+                    <li>Bases y condiciones</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Nuestras redes</h3>
+                <ul>
+                    <li><img src="" alt="rrss" id="rrss"></li>
+                    <li>todojuegos@gmail.com</li>
+                </ul>
+            </div>
+        </footer>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>

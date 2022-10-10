@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <span class="loader loader_position" id="loader_"></span>
+    <h4 id="porcentaje">0%</h4>
+    <!-- NAVBAR -->
+  
+    <div class="body_div dnone">
+        <nav class="flex_row">
+            <li><img src="../IMG/menuHamburguesa.svg" alt="menu hamburguesa" class="img_size_nav pos_rel" id="hamburguer"></li>
+            <li><img src="../IMG/logo.svg" alt="logo" class="img_size_nav pos_rel" id="logo"></li>
+            <li><img src="../IMG/carrito.svg" alt="carrito" class="img_size_nav pos_rel" id="carrito"></li>
+            <li><img src="../IMG/usuario.svg" alt="usuario" class="img_size_nav pos_rel" id="user"></li>
+        </nav>
+        <ul class="categorias dnone">
+            <li><h3>Categorias</h3></li>
+            <li>Guerra</li>
+            <div>
+                <li>Deportes</li>
+            </div>
+            <li>Arcade</li>
+            <li>Rapidos</li>
+            <li>De mesa</li>
+            <li><a href="juegosGratis.html">Gratis</a></li>
+            <li>Pagos</li>
+            <li>Mis juegos</li>
+            <li>Prosimos lanzamientos</li>
+            <li>Descuentos</li>
+        </ul>
+        <ul class="configuracion dnone">
+            <li><h3>Configuracion</h3></li>
+            <li>Metodo de pago</li>
+            <li>Modo</li>
+            <li>Cuenta</li>
+            <li><img src="../IMG/rrss.svg" alt="rrss" id="rrss"></li>
+        </ul>
+        <!-- MEDIO -->
+        <h2>Juegos mejor rankeados</h2>
+        <!-- CARRUSEL -->
+        <div class="cont_carrusel">
+            <div class="carrusel flex_row" id="carrusel">
+                <div class="card">
+                    <img src="../IMG/juegos/crash.svg" alt="logoJuego">
+                    <p class="nombre_juego">Crash Bandicoot</p>
+                    <div class="botones_hover flex_row">
+                        <h4>GRATIS</h4>
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                        <button class="jugar">
+                            <span></span><span></span><span></span><span></span>
+                            Jugar
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMG/juegos/fifa13.svg" alt="logoJuego">
+                    <p>Fifa 13</p>
+                    <div class="botones_hover flex_row">
+                        <h4>GRATIS</h4>
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                        <button class="jugar">
+                            <span></span><span></span><span></span><span></span>
+                            Jugar
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMG/juegos/nba2k16.svg" alt="logoJuego">
+                    <p>NBA 2k16</p>
+                    <div class="botones_hover flex_row">
+                        <h4>$360</h4>
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                        <button class="agregar">
+                            <span></span><span></span><span></span><span></span>
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMG/juegos/battlefield4.svg" alt="logoJuego">
+                    <p>Battlefield 4</p>
+                    <div class="botones_hover flex_row">
+                        <h4>$2700</h4>
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                        <button class="agregar">
+                            <span></span><span></span><span></span><span></span>
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMG/juegos/bloodhorne.svg" alt="logoJuego">
+                    <p>Bloodhorne</p>
+                    <div class="botones_hover flex_row">
+                        <h4>GRATIS</h4>
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                        <button class="jugar">
+                            <span></span><span></span><span></span><span></span>
+                            Jugar
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMG/juegos/bts.svg" alt="logoJuego">
+                    <p>Beyond Two Souls</p>
+                    <div class="botones_hover flex_row">
+                        <h4>GRATIS</h4>
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                        <button class="jugar">
+                            <span></span><span></span><span></span><span></span>
+                            Jugar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="puntos flex_row">
+                <li class="punto desvanecido"><img src="../IMG/flechaAtras.svg" alt=""></li>
+                <li class="punto"><img src="../IMG/flecha_derecha.svg" alt=""></li>
+            </ul>
+        </div>
+        <h2>Principales gratuitos</h2>
+        <div class="card_div flex_row">
+            <div class="card">
+                <img src="../IMG/fondoLogoJuego1.png" alt="logoJuego">
+                <p>4 en linea</p>
+                <div class="botones_hover flex_row">
+                    <h4>GRATIS</h4>
+                    <a href="juegoDescripcion.html">
+                        <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    </a>
+                    <a href="juegoCorriendo.html">
+                        <button class="jugar">
+                            <span></span><span></span><span></span><span></span>
+                            Jugar
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/juegos/crash.svg" alt="logoJuego">
+                <p>Crash Bandicoot</p>
+                <div class="botones_hover flex_row">
+                    <h4>GRATIS</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="jugar">
+                        <span></span><span></span><span></span><span></span>
+                        Jugar
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/juegos/halo.svg" alt="logoJuego">
+                <p>Halo</p>
+                <div class="botones_hover flex_row">
+                    <h4>GRATIS</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="jugar">
+                        <span></span><span></span><span></span><span></span>
+                        Jugar
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/juegos/spiderman.svg" alt="logoJuego">
+                <p>The amazing Spiderman</p>
+                <div class="botones_hover flex_row">
+                    <h4>GRATIS</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="jugar">
+                        <span></span><span></span><span></span><span></span>
+                        Jugar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h2>Principales pagos</h2>
+        <div class="card_div flex_row">
+            <div class="card">
+                <img src="../IMG/juegos/forza4.svg" alt="logoJuego">
+                <p>Forza Horizons 4</p>
+                <div class="botones_hover flex_row">
+                    <h4>$410</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="agregar">
+                        <span></span><span></span><span></span><span></span>
+                        Agregar
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/juegos/fifa22.svg" alt="logoJuego">
+                <p>FIFA 22</p>
+                <div class="botones_hover flex_row">
+                    <h4>$190</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="agregar">
+                        <span></span><span></span><span></span><span></span>
+                        Agregar
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/juegos/f121.svg" alt="logoJuego">
+                <p>F1 21</p>
+                <div class="botones_hover flex_row">
+                    <h4>$200</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="agregar">
+                        <span></span><span></span><span></span><span></span>
+                        Agregar
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/juegos/codbo.svg" alt="logoJuego">
+                <p>Call of Duty Black Ops</p>
+                <div class="botones_hover flex_row">
+                    <h4>$300</h4>
+                    <button class="ver">
+                            <span></span><span></span><span></span><span></span>
+                            Ver
+                        </button>
+                    <button class="agregar">
+                        <span></span><span></span><span></span><span></span>
+                        Agregar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="flex_row">
+            <div class="footer">
+                <h3>Juegos</h3>
+                <ul>
+                    <li>Mis juegos</li>
+                    <li><a href="juegosGratis.html">Juegos gratis</a></li>
+                    <li>Categorias</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Cuenta</h3>
+                <ul>
+                    <li>Cambiar fondo</li>
+                    <li>Medios de pago</li>
+                    <li>Tema</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Legales</h3>
+                <ul>
+                    <li>Privacidad</li>
+                    <li>Bases y condiciones</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Nuestras redes</h3>
+                <ul>
+                    <li><img src="../IMG/rrss.svg" alt="rrss" id="rrss"></li>
+                    <li>todojuegos@gmail.com</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="../JAVASCRIPT/scriptloader.js"></script>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>
