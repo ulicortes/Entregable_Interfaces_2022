@@ -189,6 +189,14 @@ footer{
 }
 
 /* JUEGO EN EJECUCION */
+.jugar_lineas{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 94%;
+    left: 43%;
+}
 .juego_exe{
     background-color: #CCBA7C;
     width: 1330px;
@@ -197,11 +205,16 @@ footer{
     flex-flow: wrap;
     justify-content: space-around;
 }
-.juego_exe button{
+/* .juego_exe button{
     position: absolute;
-    top: 100%;
-    left: 47%;
-}
+    top: 105%;
+    left: 45%;
+}*/
+.juego_exe select{
+    margin: 10px auto;
+    width: 100px;
+    text-align: center;
+} 
 .jugador, figure{
     display: grid;
 }
@@ -234,10 +247,24 @@ footer{
     grid-column: 2 / 3;
 }
 /* JUEGO */
-#game{
+/* #game{
     background-color: #CCBA7C;
     width: 1300px;
     margin: 0px auto;
+} */
+#game #ayudaBoton{
+    position: absolute;
+    top: 19%;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+}
+#game #pausaBoton{
+    position: absolute;
+    top: 19%;
+    left: 95%;
+    width: 50px;
+    height: 50px;
 }
 figure{
     align-content: center;
@@ -278,7 +305,7 @@ figure img:nth-child(5){
     flex-direction: column;
     justify-content: space-around;
 }
-#pausaBoton, #ayudaBoton{
+#pausaBoton, #ayudaBoton, #reanudar, #salir{
     cursor: pointer;
 }
 #menuAyuda{
@@ -647,6 +674,23 @@ a, a:visited{
 #user:hover { 
     cursor: pointer; 
 } 
+#btns_reiniciar_salir{
+    left: 570px;
+    top: 300px;
+    width: 200px;
+    height: 150px;
+    background: rgba(75, 74, 74, 0.8);
+    padding: 0px 10px
+}
+#gameReiniciar{
+    background: #ffa500;
+    color: #000000;
+    margin: 10px 0px;
+}
+#gameSalir{
+    background: #ffa500;
+    color: #000000;
+}
 /*  LOADER   */
 .loader {
     position: absolute;

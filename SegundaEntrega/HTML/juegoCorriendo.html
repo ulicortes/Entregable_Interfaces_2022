@@ -45,46 +45,90 @@
         </ul>
         <!-- MEDIO -->
         <div class="body_div">
-            <div id="pregame">
+            <div id="pregame" class="dnone.">
                 <div class="juego_exe flex_row">
                     <div class="jugador">
                         <img src="../IMG/jugador1.svg" alt="j1" class="j1">
-                        <p class="j2">Elegi un equipo</p>
                         <img src="../IMG/antiterroPersonaje.png" alt="antiterro" class="j3" id="antiterro">
                         <h4 class="j4">Antiterrorista</h4>
-                        <img src="../IMG/terroPersonaje.png" alt="terro" class="j5 desvanecido" id="terro">
-                        <h4 class="j6">Terrorista</h4>
+                        <div>
+                            <h4>Elegi tu color de ficha</h4>
+                            <div>
+                                <img src="../IMG/4_en_linea_partes/ct.svg" alt="w">
+                                <img src="../IMG/4_en_linea_partes/ct_green.svg" alt="w">
+                                <img src="../IMG/4_en_linea_partes/ct_orange.svg" alt="w">
+                                <img src="../IMG/4_en_linea_partes/ct_yellow.svg" alt="w">
+                            </div>
+                            <div>
+                                <select name="" id="selectCt">
+                                    <option value="ct">Por defecto</option>
+                                    <option value="ct_green">Verde</option>
+                                    <option value="ct_orange">Naranja</option>
+                                    <option value="ct_yellow">Amarillo</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="jugador">
                         <img src="../IMG/pc_jugador2.svg" alt="pc_j2" class="j1">
-                        <p class="j2">Elegi un equipo</p>
-                        <img src="../IMG/antiterroPersonaje.png" alt="antiterro" class="j3 desvanecido" id="antiterro">
-                        <h4 class="j4">Antiterrorista</h4>
-                        <img src="../IMG/terroPersonaje.png" alt="terro" class="j5" id="terro">
-                        <h4 class="j6">Terrorista</h4>
+                        <img src="../IMG/terroPersonaje.png" alt="terro" class="j3" id="terro">
+                        <h4 class="j4">Terrorista</h4>
+                        <div>
+                            <h4>Elegi tu color de ficha</h4>
+                            <div>
+                                <img src="../IMG/4_en_linea_partes/tt.svg" alt="w">
+                                <img src="../IMG/4_en_linea_partes/tt_blue.svg" alt="w">
+                                <img src="../IMG/4_en_linea_partes/tt_green.svg" alt="w">
+                                <img src="../IMG/4_en_linea_partes/tt_red.svg" alt="w">
+                            </div>
+                            <div>
+                                <select name="" id="selectTt">
+                                    <option value="tt">Por defecto</option>
+                                    <option value="tt_blue">Azul</option>
+                                    <option value="tt_green">Verde</option>
+                                    <option value="tt_red">Rojo</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn_jugar" id="gameJugar">
-                        <span></span><span></span><span></span><span></span>
-                        Jugar
-                    </button>
+                    <div class="jugar_lineas dflex">
+                        <h3>Cuantas fichas para ganar</h3>
+                        <select name="" id="selectCuantasLineas">
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <button class="btn_jugar" id="gameJugar">
+                            <span></span><span></span><span></span><span></span>
+                            Jugar
+                        </button>
+                    </div>
                 </div>
             </div>
+            <canvas width="1330px" height="550px" id="canvas" class="dnone"></canvas>
+            <div id="btns_reiniciar_salir" class="dnone">
+                <button class="btn_jugar" id="gameReiniciar">
+                    <span></span><span></span><span></span><span></span>
+                    REINICIAR
+                </button>
+                <a href="juegoDescripcion.html"><button class="btn_jugar" id="gameSalir">
+                    <span></span><span></span><span></span><span></span>
+                    SALIR
+                </button></a>
+            </div>
+            
             <div class="dnone" id="game">
                 <figure>
                     <img src="../IMG/4_en_linea_partes/ayuda.svg" alt="" id="ayudaBoton">
-                    <img src="../IMG/4_en_linea_partes/j1.svg" alt="">
-                    <img src="../IMG/4_en_linea_partes/tabla.svg" alt="">
-                    <img src="../IMG/4_en_linea_partes/j2.svg" alt="">
                     <img src="../IMG/4_en_linea_partes/pausa.svg" alt="" id="pausaBoton">
-
                 </figure>
                 <div class="div_menu_pausa dnone">
                     <ul id="menu_pausa" class="dflex">
                         <li><h3>Menu</h3></li>
-                        <li>Reanudar</li>
-                        <li>Reiniciar</li>
+                        <li id="reanudar">Reanudar</li>
+                        <li><a href="juegoCorriendo.html">Reiniciar</a></li>
                         <li>Sonido: On</li>
-                        <li>Salir</li>
+                        <li id="salir"><a href="juegoDescripcion.html">Salir</a></li>
                     </ul>
                 </div>
                 <img src="../IMG/4_en_linea_partes/menuAyuda.svg" alt="menu ayuda" id="menuAyuda" class="dnone">
@@ -124,5 +168,7 @@
             </div>
         </footer>
     <script src="../JAVASCRIPT/script.js"></script>
+    <script src="../JAVASCRIPT/Circulo.js"></script>
+    <script src="../JAVASCRIPT/scriptJuego.js"></script>
 </body>
 </html>
