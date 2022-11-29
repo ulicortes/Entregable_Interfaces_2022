@@ -90,7 +90,7 @@ nav li img{
     color: #E3EBFE;
     text-decoration: none;
 }
-.categorias li:hover, .categorias a:visited:hover, .configuracion li:hover{
+.categorias li:hover, .categorias a:hover, .categorias a:visited:hover, .configuracion li:hover{
     cursor: pointer;
     color: #000000;
     background-color: #CCBA7C;
