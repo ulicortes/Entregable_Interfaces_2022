@@ -86,7 +86,7 @@ nav li img{
     width: 50px;
     height: 45px;
 }
-.categorias a:visited {
+.categorias a:visited, .categorias a {
     color: #E3EBFE;
     text-decoration: none;
 }
