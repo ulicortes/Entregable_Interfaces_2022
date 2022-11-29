@@ -5,7 +5,7 @@
 }
 /* BODY */
 body{
-    width: 98.9vw;
+    width: 100%;
     background-color: #030316;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -14,6 +14,10 @@ body{
     text-align: center;
     justify-content: center;
     z-index: 0;
+    margin-top: 70px;
+}
+.body_div h1, .body_div h3{
+    margin: 30px 0px 15px 0px;
 }
 .nuevoJuegoBody{
     background-color: #BAFC93;
@@ -26,7 +30,14 @@ nav{
     align-content: center;
     padding: 5px 0px;
     justify-content: space-around;
-    color: #E3EBFE
+    color: #E3EBFE;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    transition: height .3s ease-in;
+}
+nav li img{
+    height: 100%;
 }
 .categorias{
     background-color: #011030;
@@ -38,7 +49,10 @@ nav{
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
+    position: fixed;
+    top: 45px;
+    transition: top .3s ease-in;
 }
 .configuracion{
     background-color: #011030;
@@ -51,8 +65,22 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    left: 1051px;
-    z-index: 1;
+    right: 0px;
+    z-index: 5;
+    position: fixed;
+    top: 45px;
+    transition: top .3s ease-in;
+}
+.categorias li{
+    position: relative;
+    left: -250px;
+    transition: left 0.4s linear;
+}
+.configuracion li{
+    position: relative;
+    right: -250px;
+    transition: right 0.4s linear;
+    width: 100%;
 }
 .img_size_nav{
     width: 50px;
@@ -62,17 +90,24 @@ nav{
     color: #E3EBFE;
     text-decoration: none;
 }
-.categorias li a:hover {
-    color: black;
+.categorias li:hover, .categorias a:visited:hover, .configuracion li:hover{
+    cursor: pointer;
+    color: #000000;
     background-color: #CCBA7C;
+}
+.categorias li h3:hover{
+    cursor:default;
+    color: #E3EBFE;
+    background-color: #011030;
 }
 /* TITULO Y BOTON PROX LANZAMIENTO */
 .titulo{
     justify-content: space-around;
+    width: 100%;
 }
 .titulo h2{
     position: relative;
-    left: 300px;
+    left: 60px;
     padding: 10px 0px;
     color: black;
 }
@@ -82,8 +117,11 @@ nav{
     border-radius: 30px;
     background-color: #FF8A00;
     position: relative;
-    right: -90px;
+    right: 90px;
     align-self: center;
+}
+.titulos_prox{
+    margin-top: 30px;
 }
 /* FOOTER */
 footer{
@@ -190,11 +228,10 @@ footer{
 
 /* JUEGO EN EJECUCION */
 .jugar_lineas{
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 94%;
+    top: 64%;
     left: 43%;
 }
 .juego_exe{
@@ -205,11 +242,6 @@ footer{
     flex-flow: wrap;
     justify-content: space-around;
 }
-/* .juego_exe button{
-    position: absolute;
-    top: 105%;
-    left: 45%;
-}*/
 .juego_exe select{
     margin: 10px auto;
     width: 100px;
@@ -247,11 +279,6 @@ footer{
     grid-column: 2 / 3;
 }
 /* JUEGO */
-/* #game{
-    background-color: #CCBA7C;
-    width: 1300px;
-    margin: 0px auto;
-} */
 #game #ayudaBoton{
     position: absolute;
     top: 19%;
@@ -656,23 +683,45 @@ a, a:visited{
     width: 100px;
     height: 250px;
 }
+#navBar{
+    justify-content: space-evenly;
+}
 #hamburguer{
-    right: 130px;
+    position: relative;
+    left: -190px;
+    height: 100%;
+    opacity: 1;
+    transition: opacity .2s ease-in;
 }
 #hamburguer:hover { 
-    cursor: pointer; 
+    cursor: pointer;
 } 
 #logo{
-    left: 170px
+    left: 140px;
+    height: 100%;
 }
 #carrito{
-    left: 400px;  
+    position: relative;
+    right: -390px; 
+    height: 100%; 
 }
 #user{
-    left: 135px;
+    position: relative;
+    right: -130px;
+    height: 85%;
 }
 #user:hover { 
     cursor: pointer; 
+} 
+#cruz{
+    position: relative;
+    left: -140px;
+    opacity: 0;
+    height: 100%;
+    transition: opacity .2s ease-in;
+}
+#cruz:hover { 
+    cursor: pointer;
 } 
 #btns_reiniciar_salir{
     left: 570px;
@@ -722,6 +771,9 @@ a, a:visited{
     top: 300px;
     left: 670px;
     color: #E3EBFE;
+}
+#img_logo_fifa{
+    top: -8px;
 }
 @keyframes diamondLoader {
     0%  ,10% {
@@ -776,7 +828,8 @@ a, a:visited{
         align-content: center;
         padding: 5px 0px;
         justify-content: space-around;
-        color: #E3EBFE
+        color: #E3EBFE;
+        
     }
     nav li:nth-child(3){
         display: none;

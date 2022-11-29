@@ -1,0 +1,119 @@
+#img_logo_fifa{
+    position: relative;
+    height: 620px;
+    overflow: hidden;
+}
+.capas{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.capa1{
+    background-image: url('../IMG/fifa_capas/bombonera.svg');
+}
+.capa2{
+    background-image: url('../IMG/fifa_capas/fifa_logo.svg');
+    top: -80px;
+    z-index: 2;
+}
+.capa3{
+    background-image: url('../IMG/fifa_capas/jugadores.svg');
+}
+#boton_reserva{
+    width: 150px;
+    height: 50px;
+    top: 650px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #FF8A00;
+    transition: transform 0.3s ease-in-out;
+}
+#boton_reserva span{
+    position: absolute;
+    background: #000000;
+    transition: .5s;
+}
+#id_proximamente{
+    color: #000000;
+    position: relative;
+    top: 620px;
+    transition: transform 0.3s ease-in-out;
+}
+.caract_cont{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+.caract{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.caract_txt{
+    width: 35%;
+    height: 100%;
+    margin: auto 0px;
+}
+.caract_txt h2{
+    color: #000000;
+}
+#cimg1, #cimg2, #cimg3{
+    width: 600px;
+    position: relative;
+    right: 700px;
+    transition: right 0.3s ease-in-out;
+}
+#cards_players{
+    width: 100%;
+}
+#card1, #card2, #card3, #card4, #card5{
+    position: relative;
+    left: -1200px;
+    transition: left 0.6s ease-in-out;
+}
+.mejor_jugador_stats{
+    width: 65%;
+    height: 10%;
+    margin: 5% auto 0 auto;
+    overflow: hidden;
+}
+#messi_stats{
+    margin-bottom: 300px;
+    transition: margin-bottom 0.6s ease-in-out;
+}
+#messi1 {
+    position: relative;
+    left: -300px;
+    transition: left 0.6s ease-in-out;
+}
+#messi2 {
+    position: relative;
+    left: -300px;
+    transition: left 0.6s ease-in-out;
+}
+#messi3 {
+    position: relative;
+    right: -300px;
+    transition: right 0.6s ease-in-out;
+}
+#messi4{
+    position: relative;
+    bottom: -300px;
+    transition: top 0.6s ease-in-out;
+}

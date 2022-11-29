@@ -1,7 +1,7 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', (event) => {
     let bodyDiv = document.querySelector('.body_div');
-    let navbar = document.querySelector('nav');
+    let footer = document.getElementById('fter');
     let loader = document.querySelector('#loader_');
     let porcentaje = document.getElementById('porcentaje');
     let buleano = true;
@@ -21,7 +21,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(function(){
             loader.classList.add('dnone');
             porcentaje.classList.add('dnone');
-            navbar.classList.remove("dnone");
+            footer.classList.remove("dnone");
+            footer.classList.add("flex_row");
             bodyDiv.classList.remove("dnone");
             buleano = false;
         }, 6060);

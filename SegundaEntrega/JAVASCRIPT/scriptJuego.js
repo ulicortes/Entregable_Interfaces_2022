@@ -11,8 +11,25 @@ let fichas2 = [];
 // SABER A QUE JUGADOR LE TOCA
 let ultFichaInsertada = "white";
 
-// NRO DE FICHAS NECESARIAS PARA GANAR
-// let linea = document.getElementById('selectCuantasLineas').value;
+// OBTENER PANTALLAS PREVIAS A EL JUEGO
+let pregame = document.getElementById('pregame');
+let gameJugar = document.getElementById('gameJugar');
+let game = document.getElementById('game');
+let linea = null;
+let colorJ1 = null;
+let colorJ2 = null;
+let habilitado = false;
+
+//OBTENCION DE LA CANTIDAD DE FICHAS APILADAS NECESARIAS PARA GANAR Y LOS COLORES DE CADA UNA
+function getNroLinea(){
+    return linea;
+}
+function getColores(){
+    return {
+        j1: colorJ1,
+        j2: colorJ2
+    }
+}
 
 let ultImagenSeleccionada = null;
 let colorFichaAnterior = null;
@@ -286,6 +303,20 @@ canvas.addEventListener('mousemove', muevoMouse, false);
 canvas.addEventListener('mouseup', dejoDeHacerClick, false);
 botonReiniciar.addEventListener('click', ()=>{
     location.reload();
+})
+gameJugar.addEventListener('click', ()=>{
+    pregame.classList.add('dnone');
+    game.classList.remove('dnone');
+    canvas.classList.remove('dnone');
+    linea = document.getElementById('selectCuantasLineas').value;
+    colorJ1 = `../IMG/4_en_linea_partes/${document.getElementById('selectCt').value}.svg`;
+    colorJ2 = `../IMG/4_en_linea_partes/${document.getElementById('selectTt').value}.svg`;
+    clearCanvas();
+    iterar();
+    fichasJ1("#5d79ae");
+    fichasJ2("#de9b35");
+    renderizaeElementos();
+    timer();
 })
 
 //VE EN QUE COLUMNA DEJO LA FICHA
